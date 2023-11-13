@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="MauiApp7.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MauiApp7.Pages"
+    Shell.FlyoutBehavior="Flyout">
+
+    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
+        <ShellContent Title="League of Legends" Icon="lol.jpg" ContentTemplate="{DataTemplate local:Lol}" />
+        <ShellContent Title="Maple story" Icon="maple.png" ContentTemplate="{DataTemplate local:Maplestory}" />
+        <ShellContent Title="Cooking Dash" Icon="cookingdash.png" ContentTemplate="{DataTemplate local:Cookingdash}" />
+    </FlyoutItem>
+
+</Shell>
